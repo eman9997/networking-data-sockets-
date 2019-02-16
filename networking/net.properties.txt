@@ -1,0 +1,26 @@
+##################################################
+# unet properties file
+#################################################
+
+#== packet drop rate =============================
+#
+#  n=0  --- Do not drop any packets
+#  n=10 --- Drop 10% of all packets
+#  n=50 --- Drop 50% of all packets 
+#  n=4,6,7 --- Drop select packets e.g. packet.droprate = 4,6,7
+
+packet.droprate = 0
+
+#== packet delay rate ============================
+#
+# packet delay in milliseconds
+# min==max --- in order delivery
+
+packet.delay.minimum = 10
+packet.delay.maximum = 10
+
+#== packet maximum transmission size =============
+# 1500 normal for ethernet
+# -1 unlimited (Integer.MAX_VALUE)
+
+packet.mtu = 1500
